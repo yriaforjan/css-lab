@@ -122,7 +122,7 @@ css-lab/
 ├── index.html          # Estructura HTML principal  
 ├── style.css           # Hoja de estilos centralizada  
 └── assets/             # Recursos estáticos
-    ├── favicon.svg     # Icono del sitio
+    ├── favicon.ico     # Icono del sitio
     └── img/            # Galería de imágenes
         ├── nasa.jpg    
         ├── pcs.jpeg    
