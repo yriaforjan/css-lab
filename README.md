@@ -9,6 +9,7 @@ CSS LAB es un proyecto de exploración técnica donde pongo a prueba las capacid
 ## 🌐 Despliegue
 
 El proyecto se encuentra desplegado y puede visualizarse en tiempo real a través del siguiente enlace:
+
 🚀 **[Ver Demo en Vivo](https://css-lab-diw.vercel.app/)**
 
 ## 📸 Vista Previa
@@ -135,11 +136,9 @@ css-lab/
 ## 📄 Licencia
 
 Este proyecto es **de carácter escolar y educativo**, desarrollado como parte de un trabajo de la asignatura *Diseño de Interfaces Web*.
-No está destinado a fines comerciales ni de distribución fuera del ámbito educativo.
 
 ---
 
 ## 👩🏼‍💻 Autor  
   
-Desarrollado por **Yria Forján Oliveira**  
-GitHub: [@yriaforjan](https://github.com/yriaforjan)
+Desarrollado por **Yria Forján Oliveira**
