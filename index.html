@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Lab | Escaparate Moderno</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="hero">
+      <div class="hero-content">
+        <h1 class="blend-title">CSS LAB</h1>
+        <p class="subtitle">Escaparate Moderno y Laboratorio Educativo</p>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fa-solid fa-chevron-down fold-animation"></i>
+      </div>
+    </header>
+
+    <main>
+      <section id="parallax-section">
+        <div class="parallax-content">
+          <h2><i class="fa-solid fa-image"></i> Efecto Parallax</h2>
+          <p>Una experiencia de profundidad creada con CSS puro.</p>
+          <div class="code-block">
+            <code>background-attachment: fixed;</code>
+            <code>background-size: cover;</code>
+            <p class="code-explanation">
+              // La imagen de fondo permanece fija mientras el contenido se desplaza.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pseudo-lab" class="lab-section">
+        <div class="container">
+          <h2><i class="fa-solid fa-flask"></i> Laboratorio de Pseudoclases</h2>
+          <div class="grid-layout">
+            <div class="card focus-card">
+              <h3>Interacción</h3>
+              <button class="btn-lab hover-btn">Hover</button>
+              <button class="btn-lab click-btn">Click</button>
+              <div class="code-snippet">
+                <p class="code-label">Estados:</p>
+                <code>:hover { background: var(--secondary-color); }</code>
+                <small>// Cambia el fondo.</small>
+                <code>:active { transform: scale(0.95); }</code>
+                <small>// Efecto de pulsación.</small>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Lista Cebra</h3>
+              <ul class="zebra-list">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+              </ul>
+              <div class="code-snippet">
+                <p class="code-label">Selector de pares:</p>
+                <code>:nth-child(even)</code>
+                <small>Aplica estilo solo a elementos pares.</small>
+              </div>
+            </div>
+
+            <div class="card focus-target">
+              <h3>Focus Within</h3>
+              <form>
+                <input type="text" placeholder="Haz click aquí..." />
+              </form>
+              <p class="hidden-msg">¡Has activado el foco!</p>
+              <div class="code-snippet">
+                <p class="code-label">Foco en descendientes:</p>
+                <code>:focus-within</code>
+                <small
+                  >Estila el contenedor padre cuando el input tiene el foco.</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="animation-studio" class="lab-section dark-bg">
+        <div class="container">
+          <h2><i class="fa-solid fa-film"></i> Estudio de Animación</h2>
+          <div class="animation-stage">
+            <div class="pulsing-circle"></div>
+            <div class="orbit-container">
+              <div class="planet"></div>
+              <div class="moon"></div>
+            </div>
+          </div>
+          <div class="code-display">
+            <div class="code-row">
+              <p>// Definición de la animación de órbita:</p>
+              <code
+                >@keyframes orbit { 
+                  from { 
+                    transform: rotate(0deg) translateX(80px) rotate(0deg); 
+                  } to { 
+                    transform: rotate(360deg) translateX(80px) rotate(-360deg); 
+                  } 
+                }</code
+              >
+            </div>
+            <div class="code-row">
+              <p>// Aplicación:</p>
+              <code>animation: orbit 4s linear infinite;</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="advanced-effects" class="lab-section">
+        <div class="container">
+          <h2>
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Efectos Avanzados
+          </h2>
+          <div class="gallery-grid">
+            <div class="gallery-item clip-polygon">
+              <img
+                src="/assets/img/bubbles.jpeg"
+                alt="Color bubbles"
+              />
+              <div class="caption code-block">
+                <small>Recorte Poligonal:</small>
+                <code
+                  >clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0%, 75%, 0% 25%);</code
+                >
+              </div>
+            </div>
+            <div class="gallery-item clip-circle">
+              <img
+                src="/assets/img/board.jpeg"
+                alt="System board"
+              />
+              <div class="caption code-block">
+                <small>Recorte Circular:</small>
+                <code>clip-path: circle(50% at 50% 50%);</code>
+              </div>
+            </div>
+          </div>
+          <div class="code-explanation-footer">
+            <p>
+              <strong>Nota:</strong> Al hacer hover (o click en pantalla táctil), se elimina el
+              <strong>clip-path</strong> para revelar la imagen completa.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="copyright">
+          &copy; 2026 <strong>CSS LAB</strong> | <i>"Diseñando píxeles, construyendo experiencias"</i>
+        </p>
+        <div class="author">
+          <p class="author">Desarrollado con ❤︎ por Yria Forján</p>
+          <div class="socials">
+            <a href="https://github.com/yriaforjan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yria-forjan-oliveira" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
